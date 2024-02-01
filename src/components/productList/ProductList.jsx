@@ -1,4 +1,4 @@
-import ProductListItem from "../productListItem/ProductListItem"
+import ProductListCard from "../productListCard/ProductListCard"
 import { getProductPage } from "../../services/productService"
 import { useEffect, useState } from "react"
 import { Link, useParams } from "react-router-dom"
@@ -22,7 +22,7 @@ const ProductList = ()=>{
         <div className="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             {pageData? 
                 pageData.data.data.map((productData)=>
-                    <ProductListItem key = {productData.id} productData = {productData}/>
+                    <ProductListCard key = {productData.id} productData = {productData}/>
                 )
                 :
                 <div>Kraunama...</div>

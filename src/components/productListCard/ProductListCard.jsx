@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const ProductListItem = (props)=>{
+const ProductListCard = (props)=>{
 return (
 
 <div className="col mb-5">
@@ -19,4 +19,4 @@ return (
             </div>
 )}
 
-export default ProductListItem
+export default ProductListCard

@@ -23,7 +23,7 @@ function App() {
           <Route path='/userProducts/:id' element={<Products/>}/>
           <Route path='/product/:id' element={<ProductPage/>}/>
         </Routes>
-        <Footer/>
+      <Footer/>
       </div>
     </Router>
   );
